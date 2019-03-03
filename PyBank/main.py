@@ -36,7 +36,7 @@ with open(file_path, 'r' , encoding = 'utf-8-sig', errors = 'ignore') as csvfile
     for i in range(len(list_profits) - 1):
         list_profit_change.append(list_profits[i+1] - list_profits[i])
     
-    # Calculating what is he averige change, rounding it to 2 decimals and printing it
+    # Calculating what is the averige change, rounding it to 2 decimals and printing it
     averige_change = str(round(sum(list_profit_change) / len(list_profit_change),2))
     print(f'Average  Change: ${averige_change}')
             
